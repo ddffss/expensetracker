@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <title>Expenses Record</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="expense">
+
+                <div class="app__title">
+                    Expenses Calculated on <span class="expense__title--month">November</span>
+                </div>
+                <div class="expense__diana clearfix" style="width: 250px; text-align: center;">
+                    <div class="expense__amine--text">Amine</div>
+                    <div class="right">
+                        <div class="expense__amine--value">0</div>
+                    </div>
+                </div>
+                
+                <div class="expense__amine clearfix" style="width: 250px;">
+                    <div class="expense__diana--text">Diana</div>
+                    <div class="right clearfix">
+                        <div class="expense__diana--value">0</div>
+                    </div>
+                </div>
+
+                <div class="expense__title">
+                    Total Expenses
+                </div>
+                <div class="expense__value">0</div>
+
+                <div class="expense__perperson">
+                    Total Expense per Person
+                </div>
+                <div class="expenseperperson__value">0</div>
+
+
+                <div class="owes__title">
+                    <span class="owes__name">who      </span> owes <span class="owesNothing__name">      who</span>
+                </div>
+                <div class="owes__value">0</div>
+
+            </div>
+        </div>
+        
+        
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__person">
+                        <option value="amine" selected>ᴀ</option>
+                        <option value="diana">ᴅ</option>
+                    </select>
+                    <select class="add__type">
+                        <option value="food" selected>Food</option>
+                        <option value="health">Health</option>
+                        <option value="apt">Apartment</option>
+                        <option value="misc">Miscellaneous</option>
+                        <option value="personalExpense">Personal Expenses</option>
+
+
+                    </select>
+                    <input type="text" class="add__description" placeholder="Add description">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <!-- <div class="diana"> -->
+                        <!-- <div class="category__container ">
+                            <span class="category__title">Food                  
+                            <p class="item__percentage">21%</p>
+                            <p class="food__value"> 2,345.64</p>
+                            </span>
+                        </div>     -->
+
+                        <div class="category__container  clearfix">
+                                <div class="category__title">Food</div> 
+                                <div class="food__value">$0</div>  
+                        </div>
+                        <div class="food__list">
+
+                            <!--
+                            <div class="item clearfix" id="diana-food-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">Pharmaphrix</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="amine-food-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">Maxi</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+
+                        </div>   
+                </div>
+                <!-- </div>     -->
+                
+                <div class="col-sm-2">
+                <!-- <div class="amine"> -->
+                    <div class="category__container  clearfix">
+                            <div class="category__title">Health</div>   
+                            <div class="health__value">$0</div>            
+                    </div>
+                    
+                    <div class="health__list">
+                       
+                        <!--
+                        <div class="item clearfix" id="diana-health-0">
+                            <div class="name">%name%</div>
+                            <div class="item__description">Pills</div>
+                            <div class="right clearfix">
+                                <div class="item__value">72</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item clearfix" id="amine-health-0">
+                            <div class="name">%name%</div>
+                            <div class="item__description">Tylenol</div>
+                            <div class="right clearfix">
+                                <div class="item__value">72</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <!-- <div class="amine"> -->
+                        <div class="category__container  clearfix">
+                            <div class="category__title">Apartment</div> 
+                            <div class="apt__value">$0</div>           
+                        </div>
+                        
+                        <div class="apt__list">
+                        
+                            <!--
+                            <div class="item clearfix" id="diana-apt-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">rent</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="amine-apt-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">hydro</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <div class="col-sm-2">
+                <!-- <div class="diana"> -->
+                        <div class="category__container  clearfix">
+                                <div class="category__title">Miscellaneous</div>   
+                                <div class="misc__value">$0</div>           
+                        </div>
+                        <div class="misc__list">
+                        
+                            <!--
+                            <div class="item clearfix" id="diana-misc-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">Shoe rack</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="amine-misc-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">coffee machine</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            
+                        </div>
+                    </div>
+
+                <div class="col-sm-2">
+                    <!-- <div class="diana"> -->
+                            <div class="category__container  clearfix">
+                                    <div class="category__title">Personal Expenses</div>   
+                                    <div class="personalexpense__value">$0</div>           
+                            </div>
+                            <div class="personalexpense__list">
+                            <!--
+                            <div class="item clearfix" id="diana-personalExpense-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">shopping</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="amine-personalExpense-0">
+                                <div class="name">%name%</div>
+                                <div class="item__description">Shoes</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">72</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->    
+                            </div>
+                        </div>
+                    
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>    
+         </div>        
+        <!-- </div> -->
+        
+        <script src="app.js"></script>
+    </body>
+</html>
