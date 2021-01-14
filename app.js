@@ -505,4 +505,6 @@ var controller = (function(expenseCtrl, UICtrl) {
     
 })(expenseController, uiController);
 
+
+
 controller.init();
